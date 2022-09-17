@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".fragments.ItemFragment">
+
+    <androidx.viewpager2.widget.ViewPager2
+        android:id="@+id/my_view_pager_2"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/skip"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:foreground="?selectableItemBackground"
+        android:padding="10dp"
+        android:text="@string/o_tkazib_yuborish"
+        android:textAllCaps="false"
+        android:textColor="@color/black"
+        android:textSize="13sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintHorizontal_bias="0.15"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toLeftOf="@id/dots_indicator"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.966" />
+
+
+    <LinearLayout
+        android:id="@+id/linear_1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="10dp"
+        android:gravity="center"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toRightOf="@id/dots_indicator"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.966">
+
+        <TextView
+            android:id="@+id/next"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:foreground="?selectableItemBackground"
+            android:padding="10dp"
+            android:text="@string/keyingisi"
+            android:textAllCaps="false"
+            android:textColor="@color/black"
+            android:textSize="13sp" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_baseline_arrow_forward_24" />
+
+    </LinearLayout>
+
+    <com.tbuonomo.viewpagerdotsindicator.SpringDotsIndicator
+        android:id="@+id/dots_indicator"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:dampingRatio="0.5"
+        app:dotsColor="@color/teal_200"
+        app:dotsCornerRadius="8dp"
+        app:dotsSize="10dp"
+        app:dotsSpacing="3dp"
+        app:dotsStrokeColor="@color/teal_200"
+        app:dotsStrokeWidth="2dp"
+        app:stiffness="300"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toRightOf="@id/skip"
+        app:layout_constraintRight_toLeftOf="@id/linear_1"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.948"
+        app:progressMode="true"
+        app:selectedDotColor="#322E2C"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">ViewPager_2</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="yangi_imkoniyatlar">Yangi imkoniyatlar</string>
+    <string name="o_tkazib_yuborish">O\'TKAZIB YUBORISH</string>
+    <string name="keyingisi">KEYINGISI</string>
+</resources>
